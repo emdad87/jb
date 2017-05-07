@@ -1,0 +1,10 @@
+/*
+ * Custom CSS for JB
+ */
+
+/* Global Styles */
+
+.modal-body .col-md-12 {
+	float: none;
+}
+
