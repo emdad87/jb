@@ -20,7 +20,9 @@
     <link href="<?php echo base_url() ?>assets/css/jb.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="<?php echo base_url() ?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="<?php echo base_url() ?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -53,7 +55,7 @@
                         <a href="#loginModal" role="button" data-toggle="modal">Login</a>
                     </li>
                     <li>
-                        <a href="#registerModal" role="button" data-toggle="modal">Register</a>
+                        <a href="#registerModal1" role="button" data-toggle="modal">Register</a>
                     </li>
                 </ul>
             </div>
@@ -282,7 +284,7 @@
     <!-- /.login modal-->
 
     <!--register modal-->
-    <div id="registerModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="registerModal1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -300,17 +302,27 @@
                             <input type="password" class="form-control input-lg" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            
+                            <label for="gender">Gender</label>
+                            <select class="form-control input-lg" id="gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>    
                         </div>
                         <div class="form-group">
-                            <label class="radio-inline"><input type="radio" value="M" checked="checked" name="gender" >Male</label>
-                            <label class="radio-inline"><input type="radio" value="F" name="gender" >Female</label>
+                            <label for="profile_for">Create profile for</label>
+                            <select class="form-control input-lg" id="profile_for">
+                                <option>Self</option>
+                                <option>Son or Daughter</option>
+                                <option>Brother or Sister</option>
+                                <option>Relative</option>
+                                <option>Friend</option>
+                            </select>    
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <div class="form-group">
-                        <button class="btn btn-primary btn-lg btn-block">Next</button>
+                        <button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-dismiss="modal" data-target="#registerModal2">Next</button>
                     </div>
                     <h4 class="text-center">
                         Already a member? <a href="#loginModal" role="button" data-dismiss="modal" data-toggle="modal">Sign in</a>
@@ -328,43 +340,45 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h3 class="text-center">Let's set up your account!</h3>
+                    <h3 class="text-center">Great! Just some basic details now</h3>
                 </div>
                 <div class="modal-body">
                     <form class="form col-md-12 center-block">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control input-lg" placeholder="First">
-                            <input type="text" class="form-control input-lg" placeholder="Last">
+                            <div class="row">
+                                <div class=" col-sm-6"><input type="text" class="form-control input-lg" placeholder="First Name"></div>
+                                <div class=" col-sm-6"><input type="text" class="form-control input-lg" placeholder="Last Name"></div>
+                            </div>                            
                         </div>
                         <div class="form-group">
                             <label>Date of Birth</label>
-                            <input type="password" class="form-control input-lg" placeholder="Password">
+                            <div class="row">
+                                <div class=" col-sm-4"><select class="form-control input-lg" id="dob"></select></div>
+                                <div class=" col-sm-4"><select class="form-control input-lg" id="mob"></select></div>
+                                <div class=" col-sm-4"><select class="form-control input-lg" id="yob"></select></div>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label>Religion</label>
-                            <input type="password" class="form-control input-lg" placeholder="Password">
+                            <label for="religion">Religion</label>
+                            <select class="form-control input-lg" id="religion"></select>
                         </div>
                         <div class="form-group">
-                            <label>Mother Tongue</label>
-                            <input type="password" class="form-control input-lg" placeholder="Password">
+                            <label for="mother_tongue">Mother Tongue</label>
+                            <select class="form-control input-lg" id="mother_tongue"></select>
                         </div>
                         <div class="form-group">
-                            <label>Country</label>
-                            <input type="password" class="form-control input-lg" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <label class="radio-inline"><input type="radio" value="M" checked="checked" name="gender" >Male</label>
-                            <label class="radio-inline"><input type="radio" value="F" name="gender" >Female</label>
+                            <label for="country">Current Location</label>
+                            <select class="form-control input-lg" id="country"></select>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <div class="form-group">
-                        <button class="btn btn-primary btn-lg btn-block">Next</button>
+                        <button class="btn btn-primary btn-lg btn-block">Sign Up</button>
                     </div>
                     <h4 class="text-center">
-                        Already a member? <a href="#loginModal" role="button" data-dismiss="modal" data-toggle="modal">Sign in</a>
+                        By signing up, you agree to our <a href="#">Terms</a>
                     </h4>
                        
                 </div>
@@ -374,7 +388,8 @@
     <!-- /.register modal 2-->
 
     <!-- jQuery -->
-    <script src="<?php echo base_url() ?>assets/js/jquery.js"></script>
+    <!-- <script src="<?php echo base_url() ?>assets/js/jquery.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -385,6 +400,8 @@
         interval: 5000 //changes the speed
     })
     </script>
+
+    <script src="<?php echo base_url() ?>assets/js/jbRegister.js"></script>
 
 </body>
 
