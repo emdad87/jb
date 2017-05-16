@@ -16,7 +16,7 @@
                 <button type="button" class="btn btn-primary btn-lg">Yes</button>
                 <button type="button" class="btn btn-info btn-lg">MayBe</button>
                 <button type="button" class="btn btn-basic btn-lg">No</button> 
-            </div><!--//profile-->
+            </div><!--//profileeeee-->
             <!-- <a class="btn btn-cta-primary pull-right" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a> -->              
         </div><!--//container-->
     </header><!--//header-->

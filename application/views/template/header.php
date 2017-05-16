@@ -17,8 +17,8 @@
     <!-- Custom CSS -->
     
     <!-- DEBUG Mode -->
-    <link href="http://192.168.1.102/jb/assets/css/modern_business.css" rel="stylesheet">
-    <link href="http://192.168.1.102/jb/assets/css/jb.css" rel="stylesheet">
+    <link href="http://192.168.1.101/jb/assets/css/modern_business.css" rel="stylesheet">
+    <link href="http://192.168.1.101/jb/assets/css/jb.css" rel="stylesheet">
 
     <!-- PRODUCTION Mode -->
     <!-- <link href="<?php echo base_url() ?>assets/css/modern_business.css" rel="stylesheet"> -->
