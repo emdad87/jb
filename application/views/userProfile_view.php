@@ -60,15 +60,6 @@
                             <li>Diet</li>
                             <li>Drinker / Smoker</li>
                             <li>Gender</li>
-                            <li>Gender</li>
-                            <li>Gender</li>
-                            <li>Gender</li>
-                            <li>Gender</li>
-                            <li>Gender</li>
-                            <li>Gender</li>
-                            <li>Gender</li>
-                            <li>Gender</li>
-                            <li>This is bla</li>
                         </ul>
                     </div>
                 </div> 
