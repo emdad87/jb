@@ -59,7 +59,6 @@
                             <li>Career</li>
                             <li>Diet</li>
                             <li>Drinker / Smoker</li>
-                            <li>Skin tone, Build</li>
                             <li>Gender</li>
                             <li>Gender</li>
                             <li>Gender</li>
