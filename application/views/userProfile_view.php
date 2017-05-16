@@ -60,6 +60,7 @@
                             <li>Diet</li>
                             <li>Drinker / Smoker</li>
                             <li>Skin tone, Build</li>
+                            <li>Gender</li>
                         </ul>
                     </div>
                 </div> 
