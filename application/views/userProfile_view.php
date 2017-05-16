@@ -9,13 +9,13 @@
     
     <header class="user-header">
         <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="http://placehold.it/180x180" alt="James Lee" />
+            <img class="profile-image img-responsive pull-left" src="<?php echo $photo; ?>" alt="James Lee" />
             <div class="profile-content pull-left">
-                <h1 class="name">User Name</h1>
+                <h1 class="name"><?php echo $first_name." ".$last_name; ?></h1>
                 <h2 class="desc">Connect with him/her?</h2>  
-                <button type="button" class="btn btn-primary btn-lg">Yes</button>
-                <button type="button" class="btn btn-info btn-lg">MayBe</button>
-                <button type="button" class="btn btn-basic btn-lg">No</button> 
+                <button type="button" class="btn btn-success btn-xs">Yes</button>
+                <button type="button" class="btn btn-primary btn-xs">MayBe</button>
+                <button type="button" class="btn btn-danger btn-xs">No</button> 
             </div><!--//profileeeee-->
             <!-- <a class="btn btn-cta-primary pull-right" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a> -->              
         </div><!--//container-->

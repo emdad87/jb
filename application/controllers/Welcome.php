@@ -35,9 +35,11 @@ class Welcome extends CI_Controller {
 		$this->load->view('userDash_view');
 	}
 
-	public function showUserProfile()
+	public function showUserProfile($userid)
 	{
-		$this->load->view('userProfile_view');
+		$this->load->model('model_profile');
+    	$user_details = $this->model_profile->get_name($userid);
+    	$this->load->view('userProfile_view', $user_details);
 	}
 
 
