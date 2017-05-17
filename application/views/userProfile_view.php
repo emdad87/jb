@@ -49,18 +49,20 @@
                     <div class="panel-heading">
                         <h4>Basic Info &amp; Lifestyle</h4>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body basic-info">
                         <ul>
-                            <li>Age/ Height : <?php echo $age; ?></li>
-                            <li>Star Sign</li>
-                            <li>Marital Status</li>
-                            <li>Community, Religion, Mother Tongue</li>
-                            <li>Lives in City, State, Country</li>
-                            <li>Grew up in Country</li>
-                            <li>Career</li>
-                            <li>Diet</li>
-                            <li>Drinker / Smoker</li>
-                            <li>Gender</li>
+                            <li><span>Age/ Height</span>: <?php echo $age; ?></li>
+                            <li><span>Gender</span>: <?php echo $gender; ?></li>
+                            <li><span>Star Sign </span>: <?php echo $star_sign; ?></li>
+                            <li><span>Marital Status </span>: <?php echo $marital_status; ?></li> 
+                            <li><span>Religion </span>: <?php echo $religion; ?></li>
+                            <li><span>Mother Tongue </span>: <?php echo $mother_tongue; ?></li>
+                            <li><span>Lives in</span>: <?php echo $location_city.",".$location_country;?></li>
+                            <li><span>Grew up in Country </span>: <?php echo $grew_up_country; ?></li>
+                            <li><span>Profession </span>: <?php echo $profession; ?></li>
+                            <li><span>Diet </span>: <?php echo $diet; ?></li>
+                            <li><span>Drinker / Smoker </span>: <?php echo $drink."/".$smoke; ?></li>
+                            
                         </ul>
                     </div>
                 </div> 

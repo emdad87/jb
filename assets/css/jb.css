@@ -138,3 +138,12 @@
 }
 /* End BOOTPLY */
 
+/* Basic info design */
+
+.basic-info ul > li > span
+{
+  width: 12em;
+  color: grey;
+  float: left;
+}
+/* EO Basic info design */
