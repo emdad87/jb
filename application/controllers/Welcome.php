@@ -37,14 +37,16 @@ class Welcome extends CI_Controller {
 
 	public function showUserProfile($userid)
 	{
+		// Load user details from jb_profile table
 		$this->load->model('model_profile');
     	$user_details = $this->model_profile->get_name($userid);
+
+    	// Calculate the Age
     	$from = new DateTime($user_details['date_of_birth']);
-    	//echo $from;
         $to = new DateTime('today');
-        //echo $to;
         $user_details['age'] = $from->diff($to)->y;
-        //echo $user_details['age'];
+ 		
+ 		// Load the view
     	$this->load->view('userProfile_view', $user_details);
 	}
 
