@@ -39,6 +39,12 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->model('model_profile');
     	$user_details = $this->model_profile->get_name($userid);
+    	$from = new DateTime($user_details['date_of_birth']);
+    	//echo $from;
+        $to = new DateTime('today');
+        //echo $to;
+        $user_details['age'] = $from->diff($to)->y;
+        //echo $user_details['age'];
     	$this->load->view('userProfile_view', $user_details);
 	}
 

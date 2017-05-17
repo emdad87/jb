@@ -51,7 +51,8 @@
                     </div>
                     <div class="panel-body">
                         <ul>
-                            <li>Age, Height, Star Sign</li>
+                            <li>Age/ Height : <?php echo $age; ?></li>
+                            <li>Star Sign</li>
                             <li>Marital Status</li>
                             <li>Community, Religion, Mother Tongue</li>
                             <li>Lives in City, State, Country</li>
