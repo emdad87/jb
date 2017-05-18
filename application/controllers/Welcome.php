@@ -18,6 +18,10 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+
+
+
 	public function index()
 	{
 		//$this->load->view('welcome_message');
@@ -35,8 +39,11 @@ class Welcome extends CI_Controller {
 		$this->load->view('userDash_view');
 	}
 
-	public function showUserProfile($userid)
+	public function showUserProfile()	// feed userId as parameter - test user id = 1
 	{
+		// Test user ID 
+		$userid = 1;
+
 		// Load user details from jb_profile table
 		$this->load->model('model_profile');
     	$user_details = $this->model_profile->get_name($userid);
@@ -48,6 +55,25 @@ class Welcome extends CI_Controller {
  		
  		// Load the view
     	$this->load->view('userProfile_view', $user_details);
+	}
+
+	public function showUserProfileEdit()
+	{
+
+		// Test user ID 
+		$userid = 1;
+
+		// Load user details from jb_profile table
+		$this->load->model('model_profile');
+    	$user_details = $this->model_profile->get_name($userid);
+
+    	// Calculate the Age
+    	$from = new DateTime($user_details['date_of_birth']);
+        $to = new DateTime('today');
+        $user_details['age'] = $from->diff($to)->y;
+
+        
+		$this->load->view('userProfileEdit_view', $user_details);
 	}
 
 

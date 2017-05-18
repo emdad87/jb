@@ -14,6 +14,7 @@
                     <li><a href="<?php echo site_url('welcome/showLanding'); ?>">Landing</a></li>
                     <li><a href="<?php echo site_url('welcome/showUserDash'); ?>">User Dashboard</a></li>
                     <li><a href="<?php echo site_url('welcome/showUserProfile'); ?>">User Profile</a></li>
+                    <li><a href="<?php echo site_url('welcome/showUserProfileEdit'); ?>">Edit Profile</a></li>
                 </ul>
             </div>
         </div>

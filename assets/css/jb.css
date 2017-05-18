@@ -138,6 +138,8 @@
 }
 /* End BOOTPLY */
 
+
+
 /* Basic info design */
 
 .basic-info ul > li > span
@@ -147,3 +149,10 @@
   float: left;
 }
 /* EO Basic info design */
+
+
+.border-left
+{
+  padding-left: 0.5em;
+  border-left: thin solid lightgrey;
+}

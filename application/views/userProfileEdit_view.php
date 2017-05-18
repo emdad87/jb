@@ -23,22 +23,6 @@
 
     <!-- Page Content -->
     <div class="container">
-
-        <!-- Page Heading/Breadcrumbs -->
-        <!-- <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Blog Home One
-                    <small>Subheading</small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li class="active">Blog Home One</li>
-                </ol>
-            </div>
-        </div> -->
-        <!-- /.row -->
-
         <div class="row">
 
             <!-- Blog Entries Column -->
@@ -47,8 +31,12 @@
                 
                 <div class="panel panel-default">
                     <div class="panel-heading">
+                        <div class="pull-right border-left"><h4><i class="fa fa-pencil-square-o "></i> Edit</h4></div>
                         <h4>Basic Info &amp; Lifestyle</h4>
                     </div>
+                    <!-- <div class="panel-heading pull-right">
+                        <a class="" href="">Edit</a>
+                    </div> -->
                     <div class="panel-body basic-info">
                         <ul>
                             <li><span>Age/ Height</span>: <?php echo $age; ?></li>
