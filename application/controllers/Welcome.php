@@ -24,22 +24,25 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		//$this->load->view('welcome_message');
-		//$this->load->view('welcome_view');
 		$this->load->view('debug_view');
 	}
 
-	public function showLanding()
+	public function show_landing_view()
 	{
-		$this->load->view('welcome_view');
+		$this->load->view('landing_view');
 	}
 
-	public function showUserDash()
+	public function show_user_details_form()
 	{
-		$this->load->view('userDash_view');
+		$this->load->view('user_details_form_view');
 	}
 
-	public function showUserProfile()	// feed userId as parameter - test user id = 1
+	public function show_user_dash()
+	{
+		$this->load->view('user_dash_view');
+	}
+
+	public function show_user_profile_others()	// feed userId as parameter - test user id = 1
 	{
 		// Test user ID 
 		$userid = 1;
@@ -54,10 +57,10 @@ class Welcome extends CI_Controller {
         $user_details['age'] = $from->diff($to)->y;
  		
  		// Load the view
-    	$this->load->view('userProfile_view', $user_details);
+    	$this->load->view('user_profile_others_view', $user_details);
 	}
 
-	public function showUserProfileEdit()
+	public function show_user_profile_self()
 	{
 
 		// Test user ID 
@@ -73,8 +76,10 @@ class Welcome extends CI_Controller {
         $user_details['age'] = $from->diff($to)->y;
 
         
-		$this->load->view('userProfileEdit_view', $user_details);
+		$this->load->view('user_profile_self_view', $user_details);
 	}
+
+
 
 
 }
