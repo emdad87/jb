@@ -28,16 +28,16 @@
 }
 
 .user-header .profile-image 
-{ 
-  margin-right: 60px;
+{
+  margin-right: 30px;
 }
 
 .user-header .profile-content .name 
 {
   color: #49515a;
-  font-size: 2em;
-  /* margin-bottom: 5px;
-  margin-top: 10px; */
+  font-size: 38px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .user-header .profile-content .desc 
@@ -45,9 +45,9 @@
   color: #778492;
   font-family: "Lato", arial, sans-serif;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 24px;
   margin-top: 40px;
-  /* margin-bottom: 5px; */
+  margin-bottom: 5px;
 }
 
 .user-header .profile-content .social a 
@@ -113,8 +113,6 @@
   {
     margin-bottom: 15px;
   }
-
-
 }
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
@@ -143,18 +141,6 @@
 
 
 /* Basic info design */
-
-  .basic-info
-  {
-    padding-top: 0;
-    padding-bottom: 0;
-        border: none;
-  }
-
-  .basic-info ul
-  {
-    margin-bottom: 0;
-  }
 
 .basic-info ul > li > span
 {

@@ -11,11 +11,11 @@
         <div class="container">                       
             <img class="profile-image img-responsive pull-left img-thumbnail" src="<?php echo $photo; ?>" alt="James Lee" />
             <div class="profile-content pull-left">
-                <div class="name"><?php echo $first_name." ".$last_name; ?></div>
+                <h1 class="name"><?php echo $first_name." ".$last_name; ?></h1>
                 <h2 class="desc">Connect with him/her?</h2>  
-                <button type="button" class="btn btn-success btn-md pull-bottom">Yes</button>
-                <button type="button" class="btn btn-primary btn-md">MayBe</button>
-                <button type="button" class="btn btn-danger btn-md">No</button> 
+                <button type="button" class="btn btn-success btn-lg">Yes</button>
+                <button type="button" class="btn btn-primary btn-lg">MayBe</button>
+                <button type="button" class="btn btn-danger btn-lg">No</button> 
             </div><!--//profileeeee-->
             <!-- <a class="btn btn-cta-primary pull-right" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a> -->              
         </div><!--//container-->
@@ -50,19 +50,19 @@
                         <h4>Basic Info &amp; Lifestyle</h4>
                     </div>
                     <div class="panel-body basic-info">
-                        <ul class="list-group row">
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Age</span>: <?php echo $age; ?></li>
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Height</span>: <?php echo $age; ?></li>
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Gender</span>: <?php echo $gender; ?></li>
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Star Sign </span>: <?php echo $star_sign; ?></li>
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Marital Status </span>: <?php echo $marital_status; ?></li> 
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Religion </span>: <?php echo $religion; ?></li>
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Mother Tongue </span>: <?php echo $mother_tongue; ?></li>
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Lives in</span>: <?php echo $location_city.",".$location_country;?></li>
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Grew up in Country </span>: <?php echo $grew_up_country; ?></li>
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Profession </span>: <?php echo $profession; ?></li>
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Diet </span>: <?php echo $diet; ?></li>
-                            <li class="list-group-item col-lg-6 col-md-6"><span>Drinker / Smoker </span>: <?php echo $drink." / ".$smoke; ?></li>  
+                        <ul>
+                            <li><span>Age/ Height</span>: <?php echo $age; ?></li>
+                            <li><span>Gender</span>: <?php echo $gender; ?></li>
+                            <li><span>Star Sign </span>: <?php echo $star_sign; ?></li>
+                            <li><span>Marital Status </span>: <?php echo $marital_status; ?></li> 
+                            <li><span>Religion </span>: <?php echo $religion; ?></li>
+                            <li><span>Mother Tongue </span>: <?php echo $mother_tongue; ?></li>
+                            <li><span>Lives in</span>: <?php echo $location_city.",".$location_country;?></li>
+                            <li><span>Grew up in Country </span>: <?php echo $grew_up_country; ?></li>
+                            <li><span>Profession </span>: <?php echo $profession; ?></li>
+                            <li><span>Diet </span>: <?php echo $diet; ?></li>
+                            <li><span>Drinker / Smoker </span>: <?php echo $drink."/".$smoke; ?></li>
+                            
                         </ul>
                     </div>
                 </div> 
@@ -258,9 +258,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script src="<?php echo base_url() ?>assets/js/jbProfile.js"></script>
 
 </body>
 
