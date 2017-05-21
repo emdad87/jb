@@ -9,7 +9,7 @@
     
     <header class="user-header">
         <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="<?php echo $photo; ?>" alt="James Lee" />
+            <img class="profile-image img-responsive pull-left img-thumbnail" src="<?php echo $photo; ?>" alt="James Lee" />
             <div class="profile-content pull-left">
                 <h1 class="name"><?php echo $first_name." ".$last_name; ?></h1>
                 <h2 class="desc">Connect with him/her?</h2>  
