@@ -15,6 +15,7 @@
                     <li><a href="<?php echo site_url('welcome/show_user_dash'); ?>">User Dashboard</a></li>
                     <li><a href="<?php echo site_url('welcome/show_user_profile_others'); ?>">User Profile Others</a></li>
                     <li><a href="<?php echo site_url('welcome/show_user_profile_self'); ?>">User Profile Self</a></li>
+                    <li><a href="<?php echo site_url('welcome/show_user_details_form'); ?>">User Details Form</a></li>
                 </ul>
             </div>
         </div>
