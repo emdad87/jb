@@ -31,7 +31,7 @@
                 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <div class="pull-right border-left"><h4><i class="fa fa-pencil-square-o "></i> Edit</h4></div>
+                        <div class="pull-right border-left"><h4><a href="#"><i class="fa fa-pencil-square-o "></i> Edit </a></h4></div>
                         <h4>Basic Info &amp; Lifestyle</h4>
                     </div>
                     <!-- <div class="panel-heading pull-right">
@@ -246,6 +246,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="<?php echo base_url() ?>assets/js/jbProfile.js"></script>
 
 </body>
 
