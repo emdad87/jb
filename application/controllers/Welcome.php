@@ -42,10 +42,10 @@ class Welcome extends CI_Controller {
 		$this->load->view('user_dash_view');
 	}
 
-	public function show_user_profile_others()	// feed userId as parameter - test user id = 1
+	public function show_user_profile_others($userid)	// feed userId as parameter - test user id = 1
 	{
 		// Test user ID 
-		$userid = 1;
+		//$userid = 1;
 
 		// Load user details from jb_profile table
 		$this->load->model('model_profile');
