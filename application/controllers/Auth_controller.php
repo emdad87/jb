@@ -19,6 +19,7 @@ Class Auth_Controller extends CI_Controller
   {
 
   	$session_array = array(
+      'logged_in' => TRUE,
       'userid' => $userid,
     );
 
@@ -57,9 +58,14 @@ Class Auth_Controller extends CI_Controller
     var_dump($data);
 
     // Check if session exist
-      // if it does redirect to dashboard
-    // else
+    if ($this->session->has_userdata('logged_in'))
+    {
+      redirect('welcome/show_user_dash');
+    }
+    else
+    {
       // Run the code blob
+      echo "You are not logged in";
         // Check/Validate the post value received
         // if post value if good
           // load the db mode
@@ -71,6 +77,7 @@ Class Auth_Controller extends CI_Controller
         // else (if post value is not good)
           // Redirect back to login page
       // END of code blob
+    }
   }
 
 }
