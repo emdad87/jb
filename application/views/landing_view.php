@@ -217,7 +217,7 @@
                     <h3 class="text-center"><img src="http://placehold.it/100x100" class="img-circle"><br>Login with your Email</h3>
                 </div>
                 <div class="modal-body">
-                    <form class="form col-md-12 center-block">
+                    <?php echo form_open('auth/login', 'class="form col-md-12 center-block"');?>
                         <div class="form-group">
                             <label>Email</label>
                             <input type="text" class="form-control input-lg" placeholder="Email">
