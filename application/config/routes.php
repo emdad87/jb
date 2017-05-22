@@ -59,6 +59,7 @@ $route['profile/(:num)'] = "welcome/show_user_profile_self/$1";
 $route['profile/other/(:num)'] = "welcome/show_user_profile_others/$1";
 $route['update'] = "controller_updater";
 $route['update/profile/(.*)'] = "Update_controller/Update_table/$1";
+$route['auth/login'] = "Auth_controller/login";
 $route['auth/login/(:num)'] = "Auth_controller/login/$1";
 $route['auth/logout'] = "Auth_controller/logout";
 $route['auth/status'] = "Auth_controller/status";

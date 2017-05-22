@@ -15,7 +15,7 @@ Class Auth_Controller extends CI_Controller
             ->_display();
   }
 
-  public function login($userid)
+  public function login_test($userid)
   {
 
   	$session_array = array(
@@ -46,4 +46,31 @@ Class Auth_Controller extends CI_Controller
   {
   	var_dump($this->session);
   }
+
+  public function login()
+  {
+    $data = array(
+    'user_name' => $this->input->post('email'),
+    'password' => $this->input->post('password')
+    );
+
+    var_dump($data);
+
+    // Check if session exist
+      // if it does redirect to dashboard
+    // else
+      // Run the code blob
+        // Check/Validate the post value received
+        // if post value if good
+          // load the db mode
+          // Check db and see if the user/pass exist
+          // if value exist
+            // Start users session and inject details in session data
+          // else
+            // Redirect back to login page
+        // else (if post value is not good)
+          // Redirect back to login page
+      // END of code blob
+  }
+
 }

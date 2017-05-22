@@ -220,11 +220,11 @@
                     <?php echo form_open('auth/login', 'class="form col-md-12 center-block"');?>
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="text" class="form-control input-lg" placeholder="Email">
+                            <input type="text" name="email" class="form-control input-lg" placeholder="Email">
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="password" class="form-control input-lg" placeholder="Password">
+                            <input type="password" name="password" class="form-control input-lg" placeholder="Password">
                         </div>
                         <div class="form-group">
                             <button class="btn btn-primary btn-lg btn-block">Sign In</button>
