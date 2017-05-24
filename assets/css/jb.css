@@ -144,17 +144,17 @@
 
 /* Basic info design */
 
-  .basic-info
-  {
-    padding-top: 0;
-    padding-bottom: 0;
-        border: none;
-  }
+.basic-info
+{
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+}
 
-  .basic-info ul
-  {
-    margin-bottom: 0;
-  }
+.basic-info ul
+{
+  margin-bottom: 0;
+}
 
 .basic-info ul > li > span
 {
@@ -165,8 +165,47 @@
 /* EO Basic info design */
 
 
+
 .border-left
 {
   padding-left: 0.5em;
   border-left: thin solid lightgrey;
+}
+
+
+.jb-page-header
+{
+  border-bottom: none;
+}
+
+.progress-line
+{
+  height: 4px;
+  position: relative;
+  overflow: inherit;
+}
+
+.progress-checkpoint 
+{
+  float: left;
+  position: absolute;
+  background-color: #337ab7;
+  width: 10px;
+  height: 10px;
+  border: solid #337ab7;
+  border-radius: 20px;
+  margin-top: -3px;
+  color: black;
+  overflow: visible;
+}
+
+.progress-checkpoint>div {
+  margin-left: -0.7em;
+  margin-top: -2em;
+}
+
+.progress-animate
+{
+  -webkit-transition: none !important;
+  transition: none !important;
 }
