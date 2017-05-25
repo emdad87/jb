@@ -209,3 +209,31 @@
   -webkit-transition: none !important;
   transition: none !important;
 }
+
+.data-panel
+{
+  opacity: 0;
+  visibility: hidden;
+    position: absolute;
+}
+
+.dead-center
+{
+  display: block;  
+  margin-right: auto;  
+  margin-left: auto;
+}
+
+.stacked
+{
+  height: 200px;
+}
+
+.stacked-on-top
+{
+  height: 100px;
+
+  top: 100px;
+  right: 0;
+  left: 0;
+}

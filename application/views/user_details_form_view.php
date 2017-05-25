@@ -9,11 +9,10 @@
     <!-- Page Content -->
     <div class="container">
 
-        <div class=" page-header jb-page-header">
+        <div class="page-header jb-page-header">
             <div class="col-md-10 col-md-offset-1">
                 <div class="progress progress-line">
-                    <div class="progress-bar progress-animate" data-level="0" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                        <!-- <span class="sr-only">70% Complete</span> -->
+                    <div class="progress-bar progress-animate" data-level="0" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
                         <div class="progress-checkpoint" style="left: 0%;">
                         <div>0%</div>
                     </div>
@@ -33,24 +32,24 @@
                         <div>100%</div>
                     </div>
                     </div>
-                </div>
-
-                    
+                </div>             
             </div>
         </div>
+        
+        <!-- <div class="row stacked">
+        
+        </div> -->
 
-        <div class="row">
+        <div class="row stacked-on-top">
+            <div class="col-md-8 col-md-offset-2">
 
+                <!-- Left Navigation Button -->
+                <button type="button" class="btn btn-default dead-center previous">&larr;</button>
+                <!-- Right Navigation Button -->
+                <button type="button" class="btn btn-default dead-center next">&rarr;</button>
 
-
-            <div class="col-md-2">
-            </div>
-            
-
-
-            <div class="col-md-8">
                 <!-- Physique Panel -->
-                <div class="panel panel-default">
+                <div class="panel panel-default data-panel" id="physique-panel">
                     <div class="panel-heading">
                         <h4>Physique</h4>
                     </div>
@@ -67,22 +66,22 @@
                 <!-- EO Physique Panel -->
 
                 <!-- Background Panel -->                
-                <!-- <div class="panel panel-default">
+                <div class="panel panel-default data-panel" id="background-panel">
                     <div class="panel-heading">
                         <h4>Background</h4>
                     </div>
-                    <div class="panel-body basic-info">
+                    <div class="panel-body basic-info" id="background-panel">
                         <ul class="list-group row">
                             <li class="list-group-item"><span>Community</span>: </li>
                             <li class="list-group-item"><span>Languages Spoken</span>: </li>
                             <li class="list-group-item"><span>Country Grew Up In</span>: </li>
                         </ul>
                     </div>
-                </div>  -->
+                </div>
                 <!-- EO Background Panel -->
 
                 <!-- Beliefs Panel -->
-                <!-- <div class="panel panel-default">
+                <div class="panel panel-default data-panel" id="beliefs-panel">
                     <div class="panel-heading">
                         <h4>Beliefs</h4>
                     </div>
@@ -94,11 +93,11 @@
                             <li class="list-group-item"><span>Practise</span>: </li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
                 <!-- EO Beliefs Panel --> 
                 
                 <!-- Family Panel -->
-                <!-- <div class="panel panel-default">
+                <div class="panel panel-default data-panel" id="family-panel">
                     <div class="panel-heading">
                         <h4>Family</h4>
                     </div>
@@ -106,15 +105,15 @@
                         <ul class="list-group row">
                             <li class="list-group-item"><span>Father's Profession</span>: </li>
                             <li class="list-group-item"><span>Mother's Profession</span>: </li>
-                            4 dropdowns for 1. brother and 2. sister 3&4. [x] of whom are married
+                            <!-- 4 dropdowns for 1. brother and 2. sister 3&4. [x] of whom are married -->
                             <li class="list-group-item"><span>Number of Siblings</span>: </li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
                 <!-- EO Family Panel -->
                 
                 <!-- Education & Career Panel -->
-                <!-- <div class="panel panel-default">
+                <div class="panel panel-default data-panel" id="education-panel">
                     <div class="panel-heading">
                         <h4>Education &amp; Career</h4>
                     </div>
@@ -126,13 +125,13 @@
                             <li class="list-group-item">High school: </li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
                 <!-- Education & Career Panel -->
 
                 <!-- Physique Panel -->
-                <!-- <div class="panel panel-default">
+                <div class="panel panel-default data-panel" id="partner-panel">
                     <div class="panel-heading">
-                        <h4>Physique</h4>
+                        <h4>Partner Preferences</h4>
                     </div>
                     <div class="panel-body basic-info">
                         <ul class="list-group row">
@@ -143,20 +142,10 @@
                             <li class="list-group-item">Disabilities (if any)</li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
                 <!-- EO Physique Panel -->      
 
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="previous">
-                        <a >&larr; Previous</a>
-                    </li>
-                    <li class="next">
-                        <a >Next &rarr;</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-2">
+                
             </div>
         </div>
         <!-- /.row -->
